@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+
+	<listeners>
+		
+ 		<listener class-name="com.wired.get.listeners.TestListener"></listener> 
+ 		<listener class-name="com.wired.get.listeners.TestNGCustomReportListener"></listener>
+ 		<listener class-name="com.wired.get.listeners.AnnotationTest"></listener>  
+ 	</listeners>  
+ 	
+ 	<test name="RegressionTest">
+
+	    <classes>
+	     <class name="com.wired.get.precondition.SetUp"/> 
+	     <class name="com.wired.get.regression.AndroidTest"/>
+	    </classes>
+  	</test>
+  	
+  </suite>	
+ 	
